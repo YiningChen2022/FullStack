@@ -1,6 +1,7 @@
  
 import React, { useEffect, useState } from 'react'
 import EmployeeService from '../services/EmployeeService'
+import {Link} from 'react-router-dom' 
 
 //rfce ES6 error function
 const ListEmployeeComponents = () => {
@@ -19,6 +20,7 @@ const ListEmployeeComponents = () => {
     return (
         <div className = "container">
             <h2 className = "text-center ">List Employees</h2>
+            <Link to ="/add_employee" className = "btn btn-primary mb-2"> add Employee </Link>
             <table className = "table table-bordered table-striped">
                 <thead>
                     <th>Employee Id</th>

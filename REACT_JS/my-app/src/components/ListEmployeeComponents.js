@@ -1,6 +1,7 @@
  
 import React, { useEffect, useState } from 'react'
 import EmployeeService from '../services/EmployeeService'
+
 //rfce ES6 error function
 const ListEmployeeComponents = () => {
     //the useState is a Hook (function) that allows you to have state variabes in functional components
@@ -10,7 +11,7 @@ const ListEmployeeComponents = () => {
        EmployeeService.getAllEmployees().then((response)=>{
            setemployees(response.data)
            console.log(response.data)
-       }).catcb(error => {
+       }).catch(error => {
            console.log(error);
        })
     },[])

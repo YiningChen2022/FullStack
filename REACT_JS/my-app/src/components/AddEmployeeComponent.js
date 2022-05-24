@@ -1,9 +1,22 @@
 import React from 'react'
+import { useState } from 'react'
+
 
 const AddEmployeeComponent = () => {
+
+    const[firstName, setFirstName] = useState('')
+    const[lastName, setLastName] = useState('')
+    const[emailId, setEmailId] = useState('')
+
+
   return (
     <div>
-      <h1>Add Employee Component Called</h1>
+        <div className='container'>
+            <div className='row'>
+                <div className='card '></div>
+            </div>
+        </div>
+  
     </div>
   )
 }

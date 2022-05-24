@@ -1,4 +1,4 @@
-import logo from './logo.svg';
+
 import { BrowserRouter as Router, Route, Routes }from 'react-router-dom'
 import './App.css';
 import ListEmployeeComponents from './components/ListEmployeeComponents';
@@ -13,11 +13,10 @@ function App() {
         <HeaderComponent/>
         <div className = "container">
           <Routes>
-            <Route exactpath = "/" element={<ListEmployeeComponents/>}></Route>
-            <Route path = "/employees" element={<ListEmployeeComponents/>}></Route>
-            <Route path = "/add-employees" element={<AddEmployeeComponent/>}></Route>
+            <Route exact path = "/" element={<ListEmployeeComponents/>}/>
+            <Route path = "/employees" element= {<ListEmployeeComponents/>}/>
+            <Route path = "/add-employee" element= {<AddEmployeeComponent/>}/>
           </Routes>
-          
         </div>
 
         <FooterComponent/>
